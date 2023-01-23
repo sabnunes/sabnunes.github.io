@@ -13,6 +13,8 @@
             font-size: 24px;
             margin: 0px;
             line-height: 1.5;
+            background-color: rgb(58, 58, 58);
+            color:white;
         }
 
         html {
@@ -103,16 +105,24 @@
         }
 
         @media only screen and (max-width: 700px) {
-        .responsive {
-            width: 49.99999%;
-            margin: 6px 0;
-        }
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+
+            .ascii-art {
+                font-size: 50%;
+            }
         }
 
         @media only screen and (max-width: 500px) {
-        .responsive {
-            width: 100%;
-        }
+            .responsive {
+                width: 100%;
+            }
+
+            .ascii-art {
+                font-size: 30%;
+            }
         }
 
         .clearfix:after {
@@ -134,6 +144,8 @@
             font-family: monospace;
             white-space: pre;
             color: white;
+            line-height: 1;
+
         }
     </style>
     </head>
@@ -142,6 +154,9 @@
     <body>
         <div class="cover">
             <div class="ascii-art">
+
+
+
     ░██╗░░░░░░░██╗███████╗██╗░░░░░░█████╗░░█████╗░███╗░░░███╗███████╗░░░─▄▀─▄▀╗░░░
     ░██║░░██╗░░██║██╔════╝██║░░░░░██╔══██╗██╔══██╗████╗░████║██╔════╝░░░──▀──▀╝░░░
     ░╚██╗████╗██╔╝█████╗░░██║░░░░░██║░░╚═╝██║░░██║██╔████╔██║█████╗░░░░░█▀▀▀▀▀█▄░░
@@ -161,7 +176,7 @@
         
         <div class="main" id="home">
             <h1>Hello World</h1>
-            <p>This webpage is hosted with GitHub Pages, and it is under development.</p>
+            <p>This webpage is under development.</p>
             <p>Please visit my <a href="http://snunes.com/" target="_blank" rel="noreferrer noopener">art portfolio</a> for samples of my creative work.</p>
             <p>Thanks for visiting!</p>
         </div>
