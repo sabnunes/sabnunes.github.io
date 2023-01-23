@@ -20,22 +20,16 @@
         }
 
         #home {
-                        padding: 10px;
-            background-color: #60d860;
- }
-
-        #code {
-            margin: 50px;
-            background-color: #e76b6b;
-}
-
-        #contact {
-            margin: 50px;
-            background-color: #847df0;
+            padding: 10px 30px;
         }
 
+        #code {
+            padding: 10px 30px;
+        }
 
-        
+        #contact {
+            padding: 10px 30px;
+        }        
 
         ul {
             position: -webkit-sticky; /* Safari */
@@ -52,45 +46,117 @@
         }
 
         li {
-        float: left;
+            float: left;
         }
 
         li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
         }
 
         li a:hover:not(.active) {
-        background-color: #111;
+            background-color: rgb(88, 99, 95);
         }
 
         .active {
-        background-color: #04AA6D;
+            background-color: #299667;
         }
 
-        /* @media screen and (max-width: 1000px) {
+        /* Responsible Vertical Navigation bar
+        @media screen and (max-width: 1000px) {
             ul li.right, 
             ul li {float: none;}
         } */
+
+        div.gallery {
+        border: 0px solid #ccc;
+        }
+
+        div.gallery:hover {
+        border: 0px solid #777;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(60%);
+
+        }
+
+        div.gallery img {
+        width: 100%;
+        height: auto;
+        }
+
+        div.desc {
+        padding: 15px;
+        text-align: center;
+        }
+
+        * {
+        box-sizing: border-box;
+        }
+
+        .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+        .responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+        }
+        }
+
+        @media only screen and (max-width: 500px) {
+        .responsive {
+            width: 100%;
+        }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+            padding: 14px 16px;
+        }
+
+        .cover {
+            background-image: url("images/cover.jpg");
+            background-attachment: fixed;
+            background-size: 100% ;
+            height: 300px;
+            background-position-y: center;
+        }
+
+        .ascii-art {
+            font-family: monospace;
+            white-space: pre;
+            color: white;
+        }
     </style>
     </head>
     
 
     <body>
-        <div class="header">
-            <h2>Title Art</h2>
-            <p>Title art text</p>
-          </div>
+        <div class="cover">
+            <div class="ascii-art">
+    ░██╗░░░░░░░██╗███████╗██╗░░░░░░█████╗░░█████╗░███╗░░░███╗███████╗░░░─▄▀─▄▀╗░░░
+    ░██║░░██╗░░██║██╔════╝██║░░░░░██╔══██╗██╔══██╗████╗░████║██╔════╝░░░──▀──▀╝░░░
+    ░╚██╗████╗██╔╝█████╗░░██║░░░░░██║░░╚═╝██║░░██║██╔████╔██║█████╗░░░░░█▀▀▀▀▀█▄░░
+    ░░████╔═████║░██╔══╝░░██║░░░░░██║░░██╗██║░░██║██║╚██╔╝██║██╔══╝░░░░░█░░░░░█─█╗
+    ░░╚██╔╝░╚██╔╝░███████╗███████╗╚█████╔╝╚█████╔╝██║░╚═╝░██║███████╗░░░▀▄▄▄▄▄▀▀╔╝
+    ░░░╚═╝░░░╚═╝░░╚══════╝╚══════╝░╚════╝░░╚════╝░╚═╝░░░░░╚═╝╚══════╝░░░░░╚═════╝░                                                                                                                                                      
+            </div>   
+        </div>
 
         <ul>
             <li><a class="active" href="#home">Home</a></li>
             <li><a href="#code">Code</a></li>
             <li><a href="">GitHub</a></li>
             <li><a href="#contact">Contact</a></li>
-          </ul>
+        </ul>
      
         
         <div class="main" id="home">
@@ -101,19 +167,48 @@
         </div>
 
         <div class="main" id="code">
-            <h2>Portfolio</h2>
-            <p>E: <br>C:</p>
-            <p>E: <br>C:</p>
-            <p>E: <br>C:</p>
-            <p>E: <br>C:</p>
-            <p>E: <br>C:</p>
+            <h1>Portfolio</h1>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="project.html">
+                        <img src="images/project.jpg" alt="Project" width="600" height="400">
+                    </a>
+                    <div class="desc">description</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="project.html">
+                        <img src="images/project.jpg" alt="Project" width="600" height="400">
+                    </a>
+                    <div class="desc">description</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="project.html">
+                        <img src="images/project.jpg" alt="Project" width="600" height="400">
+                    </a>
+                    <div class="desc">description</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="project.html">
+                        <img src="images/project.jpg" alt="Project" width="600" height="400">
+                    </a>
+                    <div class="desc">description</div>
+                </div>
+            </div>
+              
+            <div class="clearfix"></div>
+
+
         </div>
 
         <div class="main" id="contact">
-            <h2>Contact</h2>
-            <p>E: <br>C:</p>
-            <p>E: <br>C:</p>
-            <p>E: <br>C:</p>
+            <h1>Contact</h1>
             <p>E: <br>C:</p>
             <p>E: <br>C:</p>
         </div>
