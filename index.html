@@ -9,16 +9,118 @@
 
     <style>
         body {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 32px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            margin: 0px;
+            line-height: 1.5;
         }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #home {
+            height: 400px;
+            margin: 50px;
+        }
+
+        #code {
+            height: 400px;
+            margin: 50px;
+        }
+
+        #contact {
+            height: 400px;
+            margin: 50px;
+        }
+
+
+        /* Add a black background color to the top navigation */
+        .topnav {
+            background-color: #333;
+            overflow: hidden;
+            margin: 0px;
+
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        ul {
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 0;
+            font-size: 17px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            top: 0;
+            width: 100%;
+        }
+
+        li {
+        float: left;
+        }
+
+        li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+        background-color: #111;
+        }
+
+        .active {
+        background-color: #04AA6D;
+        }
+
     </style>
     </head>
+    
 
     <body>
-        <h1>Hello World</h1>
-        <p>This webpage is hosted with Github Pages, and it is under development.</p>
-        <p>Please visit my <a href="http://snunes.com/" target="_blank" rel="noreferrer noopener">art portfolio</a> for samples of my creative work.</p>
-        <p>Thanks for visiting!</p>
+        <div class="header">
+            <h2>Title Art</h2>
+            <p>Title art text</p>
+          </div>
+
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#code">Code</a></li>
+            <li><a href="">GitHub</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+     
+        
+        <div class="main" id="home">
+            <h1>Hello World</h1>
+            <p>This webpage is hosted with GitHub Pages, and it is under development.</p>
+            <p>Please visit my <a href="http://snunes.com/" target="_blank" rel="noreferrer noopener">art portfolio</a> for samples of my creative work.</p>
+            <p>Thanks for visiting!</p>
+        </div>
+
+        <div class="main" id="code">
+            <h2>Portfolio</h2>
+        </div>
+
+        <div class="main" id="contact">
+            <h2>Contact</h2>
+            <p>E: <br>C:</p>
+            <p>E: <br>C:</p>
+            <p>E: <br>C:</p>
+        </div>
     </body>
 </html>
