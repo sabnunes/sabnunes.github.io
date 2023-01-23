@@ -35,23 +35,7 @@
         }
 
 
-        /* Add a black background color to the top navigation */
-        .topnav {
-            background-color: #333;
-            overflow: hidden;
-            margin: 0px;
-
-        }
-
-        /* Style the links inside the navigation bar */
-        .topnav a {
-            float: left;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
+        
 
         ul {
             position: -webkit-sticky; /* Safari */
@@ -87,6 +71,10 @@
         background-color: #04AA6D;
         }
 
+        @media screen and (max-width: 1000px) {
+            ul.topnav li.right, 
+            ul.topnav li {float: none;}
+        }
     </style>
     </head>
     
