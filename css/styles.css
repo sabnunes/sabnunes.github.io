@@ -1,11 +1,132 @@
-            <div class="ascii-art">
 
+body {
+       font-family: 'Montserrat', sans-serif;
+       font-size: 24px;
+       margin: 0px;
+       line-height: 1.5;
+       background-color: white;
+       color: black;
+   }
 
-            
-     ░██╗░░░░░░░██╗███████╗██╗░░░░░░█████╗░░█████╗░███╗░░░███╗███████╗░░░─▄▀─▄▀╗░░░
-     ░██║░░██╗░░██║██╔════╝██║░░░░░██╔══██╗██╔══██╗████╗░████║██╔════╝░░░──▀──▀╝░░░
-     ░╚██╗████╗██╔╝█████╗░░██║░░░░░██║░░╚═╝██║░░██║██╔████╔██║█████╗░░░░░█▀▀▀▀▀█▄░░
-     ░░████╔═████║░██╔══╝░░██║░░░░░██║░░██╗██║░░██║██║╚██╔╝██║██╔══╝░░░░░█░░░░░█─█╗
-     ░░╚██╔╝░╚██╔╝░███████╗███████╗╚█████╔╝╚█████╔╝██║░╚═╝░██║███████╗░░░▀▄▄▄▄▄▀▀╔╝
-     ░░░╚═╝░░░╚═╝░░╚══════╝╚══════╝░╚════╝░░╚════╝░╚═╝░░░░░╚═╝╚══════╝░░░░░╚═════╝░                                                                                                                                                      
-            </div>
+   html {
+       scroll-behavior: smooth;
+   }
+
+   #home {
+       padding: 10px 30px;
+   }
+
+   #code {
+       padding: 10px 30px;
+   }
+
+   #contact {
+       padding: 10px 30px;
+   }        
+
+   ul {
+       position: -webkit-sticky; /* Safari */
+       position: sticky;
+       top: 0;
+       font-size: 17px;
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+       overflow: hidden;
+       background-color: #333;
+       top: 0;
+       width: 100%;
+   }
+
+   li {
+       float: left;
+   }
+
+   li a {
+       display: block;
+       color: white;
+       text-align: center;
+       padding: 14px 16px;
+       text-decoration: none;
+   }
+
+   li a:hover:not(.active) {
+       background-color: rgb(88, 99, 95);
+   }
+
+   .active {
+       background-color: #299667;
+   }
+
+   /* Responsible Vertical Navigation bar
+   @media screen and (max-width: 1000px) {
+       ul li.right, 
+       ul li {float: none;}
+   } */
+
+   div.gallery {
+   border: 0px solid #ccc;
+   }
+
+   div.gallery:hover {
+   border: 0px solid #777;
+   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+   filter: grayscale(60%);
+
+   }
+
+   div.gallery img {
+   width: 100%;
+   height: auto;
+   }
+
+   div.desc {
+   padding: 15px;
+   text-align: center;
+   }
+
+   * {
+   box-sizing: border-box;
+   }
+
+   .responsive {
+   padding: 0 6px;
+   float: left;
+   width: 24.99999%;
+   }
+
+   @media only screen and (max-width: 700px) {
+       .responsive {
+           width: 49.99999%;
+           margin: 6px 0;
+       }
+   }
+
+   @media only screen and (max-width: 500px) {
+       .responsive {
+           width: 100%;
+       }
+   }
+
+   .clearfix:after {
+       content: "";
+       display: table;
+       clear: both;
+       padding: 14px 16px;
+   }
+
+   .cover {
+       background-image: url("images/cover.jpg");
+       background-attachment: fixed;
+       background-size: 100% ;
+       height: 160px;
+       background-position-y: center;
+   }
+
+   .ascii-art {
+       font-family: monospace;
+       white-space: pre;
+       color: white;
+       line-height: 1.1;
+       font-size: 12px;
+   }
