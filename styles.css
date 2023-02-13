@@ -26,8 +26,8 @@ div.desc {padding: 0 0 16px 0;text-align: center;}
 
 @media only screen and (max-width: 700px) {.responsive {width: 49.99999%;margin: 6px 0;}}
 @media only screen and (max-width: 500px) {.responsive {width: 100%;}}
-@media only screen and (max-width: 700px) {.ascrii-art {font-size: 80%;}}
-@media only screen and (max-width: 500px) {.ascrii-art {font-size: 25%;}}
+@media only screen and (max-width: 700px) {.ascrii-art {font-size: 80%;line-height: 60%;}}
+@media only screen and (max-width: 500px) {.ascrii-art {font-size: 20%;line-height: 30%;}}
 
 .clearfix:after {content: "";display: table;clear: both;padding: 14px 16px;}
 
@@ -39,7 +39,7 @@ div.desc {padding: 0 0 16px 0;text-align: center;}
 .w3-light-grey{color:#000!important;background-color:#3600b5!important}
 
 .skills {column-count: 3;}
-.contacts {column-count: 4;}
+/* .contacts {column-count: 3;} */
 
 table {border-collapse: collapse;width: 100%;}
 td, th {border: 0px solid #dddddd;text-align: left;padding: 8px;}
